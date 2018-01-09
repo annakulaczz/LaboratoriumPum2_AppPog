@@ -11,12 +11,19 @@
     tools:context="com.example.ania.apppog.Main2Activity">
 
     <TextView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Lista miejsc:"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
         android:id="@+id/city_TV2"
         android:gravity="center"
-        android:layout_marginTop="100dp"
-        android:text="Lista miejsc:"
-        android:textColor="@android:color/white"
-        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+       android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
         />

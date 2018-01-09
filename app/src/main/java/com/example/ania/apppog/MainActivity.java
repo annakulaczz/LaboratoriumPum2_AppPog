@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -54,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
+        Intent getData = getIntent();
+        Bundle bundle = getIntent().getExtras();
 
+        if (bundle != null){
+            String new_city = bundle.getString("name");
+            city_TV.setText(new_city);
+        }
     }
+
+
 }
